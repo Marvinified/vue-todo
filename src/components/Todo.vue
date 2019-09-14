@@ -48,7 +48,7 @@ export default {
   }
 }
 .title {
-  word-break: break-all;
+  word-break: break-word;
   padding: 5px;
   text-align: left;
 }

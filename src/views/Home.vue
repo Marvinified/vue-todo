@@ -66,7 +66,7 @@ export default {
     add: function(title) {
       console.log(title);
       this.todos.push({
-        id: this.todos.length,
+        id: this.todos.length + 1,
         title: title,
         completed: false
       });
