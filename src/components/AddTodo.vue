@@ -1,7 +1,7 @@
 <template>
   <div class="todo-container">
     <div class="create-todo">
-      <textarea type="text" :value="title" @change="onTextChange" placeholder="Add new Task" />
+      <textarea type="text" v-model="title" placeholder="Add new Task" />
     </div>
     <div class="create-btn" @click="add">Create new task</div>
   </div>
@@ -25,9 +25,9 @@ export default {
         this.title = "";
       }
     },
-    onTextChange: function(e) {
-      this.title = e.target.value;
-    }
+    // onTextChange: function(e) {
+    //   this.title = e.target.value;
+    // }
   }
 };
 </script>

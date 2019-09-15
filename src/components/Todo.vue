@@ -3,10 +3,9 @@
     <span class="todo" @click="toggle">
       <input
         type="checkbox"
-        @select="toggle"
+        v-model="completed"
         v-bind:value="title"
         v-bind:name="title"
-        v-bind:checked="completed"
       />
       <span class="title">{{title}}</span>
     </span>
